@@ -1,0 +1,47 @@
+@import "variables";
+@import "reset";
+
+a {
+    text-decoration: none;
+    &:hover {
+        color: var($accent-color);
+        font-weight: bold;
+    }
+}
+
+
+div#container {
+    display: flex;
+    flex-direction: column;
+}
+
+div#content {
+    display: inherit;
+    section {
+        width: 80vw;
+        display: inherit;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    aside {
+        width: 20vw;
+    }
+    
+}
+
+article {
+    flex: 33.33%;
+    div {
+        margin: var(--general-margin);
+        border: 1px solid var(--grey-foreground-color);
+        img {
+            height: 500px;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+
+
+
